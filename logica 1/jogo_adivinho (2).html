@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>tenta a sorte seu viado</button>
+
+<script>
+	var segredo = 5
+	var input = document.querySelector("input");
+		input.focus();
+	
+	function verifica() {
+
+		if(input.value == segredo) {
+		
+		alert("voce acertou!");
+		} else {
+
+		alert("voce errou!");
+		}
+
+				input.value = "";
+				input.focus();
+
+	}
+
+	var button = document.querySelector("button");
+
+	button.onclick = verifica;
+
+</script>

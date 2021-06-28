@@ -1,0 +1,48 @@
+<meta charset="UTF-8">;
+
+<script>
+
+function pulalinha() {
+
+		document.write("<br>")
+}
+
+function mostra(frase) {
+
+	document.write(frase)
+	pulalinha()
+}
+
+var tentativa = 1
+var limite = 3
+
+
+var loginCadastrado = "victor";
+var senhaCadastrada = "0405"
+
+while(tentativa <= limite){
+
+var loginImformado = prompt("informe o seu login");
+var senhaImformada = prompt("informe a sua senha");
+
+if(loginCadastrado == loginImformado && senhaCadastrada == senhaImformada) {
+
+alert("bem vindo senhor" + " " + loginImformado) 
+tentativa = limite
+
+} else {
+
+	if(tentativa == 3) {
+
+alert("numero de tentativas ultrapassado, estamos ligando para as autoridades")
+} else {
+
+	alert("tente novamente")
+}
+}
+tentativa = tentativa +1
+}
+
+
+
+	</script>
